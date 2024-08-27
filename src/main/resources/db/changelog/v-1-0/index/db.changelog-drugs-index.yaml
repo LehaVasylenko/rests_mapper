@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - changeSet:
+      id: 6
+      author: Vasylenko_O
+      changes:
+        - createIndex:
+            indexName: idx_user_login_drug_id
+            tableName: drugs
+            columns:
+              - column:
+                  name: user_login
+              - column:
+                  name: drug_id

@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/v-1-0/db.changelog-user.yaml
+  - include:
+      file: db/changelog/v-1-0/db.changelog-controller_events.yaml
+  - include:
+      file: db/changelog/v-1-0/db.changelog-shops.yaml
+  - include:
+      file: db/changelog/v-1-0/db.changelog-drugs.yaml
+  - include:
+      file: db/changelog/v-1-0/index/db.changelog-user-index.yaml
+  - include:
+      file: db/changelog/v-1-0/index/db.changelog-drugs-index.yaml

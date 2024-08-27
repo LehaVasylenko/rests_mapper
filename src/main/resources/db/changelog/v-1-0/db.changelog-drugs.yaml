@@ -1,0 +1,59 @@
+databaseChangeLog:
+  - changeSet:
+      id: 5
+      author: Vasylenko_O
+      changes:
+        - createTable:
+            tableName: drugs
+            columns:
+              - column:
+                  name: id
+                  type: UUID
+                  autoIncrement: false
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: user_login
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: drug_id
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: drug_name
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: drug_producer
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: morion_id
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: optima_id
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: barcode
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: home
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: pfactor
+                  type: INTEGER
+                  constraints:
+                    nullable: true

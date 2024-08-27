@@ -1,0 +1,65 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: Vasylenko_O
+      changes:
+        - createTable:
+            tableName: controller_events
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: time
+                  type: timestamp
+                  constraints:
+                    nullable: false
+              - column:
+                  name: path
+                  type: varchar(50)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: user_name
+                  type: varchar(100)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: password
+                  type: varchar(100)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: headers
+                  type: text
+                  constraints:
+                    nullable: true
+              - column:
+                  name: length
+                  type: int
+                  constraints:
+                    nullable: true
+              - column:
+                  name: request_body
+                  type: text
+                  constraints:
+                    nullable: true
+              - column:
+                  name: response_body
+                  type: text
+                  constraints:
+                    nullable: true
+              - column:
+                  name: is_error
+                  type: boolean
+                  constraints:
+                    nullable: false
+              - column:
+                  name: error_message
+                  type: text
+                  constraints:
+                    nullable: true
